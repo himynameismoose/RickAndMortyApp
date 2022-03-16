@@ -12,6 +12,10 @@ import com.example.rickandmortyapp.databinding.ItemCharacterBinding
 
 class CharacterAdapter :
     ListAdapter<CharactersListQuery.Result, CharacterViewHolder>(CharacterDiffUtil()) {
+
+    // clicked character card
+    var onItemClicked: ((CharactersListQuery.Result) -> Unit)? = null
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
         val binding: ItemCharacterBinding = DataBindingUtil.inflate(
             LayoutInflater.from(parent.context),
@@ -25,6 +29,12 @@ class CharacterAdapter :
 
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         holder.binding.character = getItem(position)
+
+        // opens character details on a new screen
+        val character = getItem(position)
+        holder.binding.root.setOnClickListener {
+            onItemClicked?.invoke(character)
+        }
     }
 }
 
