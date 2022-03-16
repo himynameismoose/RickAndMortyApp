@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RickAndMortyApp</string>
     <string name="view_all_characters">View all characters</string>
+    <string name="zero_characters_found">Zero characters found</string>
 </resources>
