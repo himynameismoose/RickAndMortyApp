@@ -17,8 +17,9 @@
 
         <ImageView
             android:id="@+id/character_iv"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_width="339dp"
+            android:layout_height="168dp"
+            android:layout_marginTop="128dp"
             android:scaleType="fitXY"
             app:imageUrl="@{query.character.image}"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,8 +31,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:layout_marginTop="108dp"
             android:text="@{`ID:  ` + query.character.id}"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/character_iv"
             tools:text="ID: #20" />
@@ -89,9 +92,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:layout_marginTop="96dp"
             android:text="@{`Gender:  ` + query.character.gender}"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/character_type"
             tools:text="Male" />
