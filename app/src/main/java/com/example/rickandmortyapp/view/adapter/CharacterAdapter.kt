@@ -2,10 +2,13 @@ package com.example.rickandmortyapp.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
+import androidx.databinding.BindingAdapter
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.example.rickandmortyapp.CharactersListQuery
 import com.example.rickandmortyapp.R
 import com.example.rickandmortyapp.databinding.ItemCharacterBinding
@@ -55,5 +58,10 @@ class CharacterDiffUtil : DiffUtil.ItemCallback<CharactersListQuery.Result>() {
     ): Boolean {
         return oldItem == newItem
     }
+}
 
+// To be used to pull images for characters
+@BindingAdapter("imageUrl")
+fun setImageUrl(imageView: ImageView, url: String?) {
+    imageView.load(url) { crossfade(true) }
 }
