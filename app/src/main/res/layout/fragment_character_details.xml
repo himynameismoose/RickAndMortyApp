@@ -17,12 +17,13 @@
 
         <ImageView
             android:id="@+id/character_iv"
-            android:layout_width="339dp"
-            android:layout_height="168dp"
-            android:layout_marginTop="128dp"
+            android:layout_width="348dp"
+            android:layout_height="239dp"
+            android:layout_marginTop="68dp"
             android:scaleType="fitXY"
             app:imageUrl="@{query.character.image}"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
