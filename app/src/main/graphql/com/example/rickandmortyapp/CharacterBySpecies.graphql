@@ -1,9 +1,0 @@
-query CharacterBySpecies($filter: FilterCharacter) {
-    characters(filter: $filter) {
-        results {
-            id
-            name
-            species
-        }
-    }
-}
