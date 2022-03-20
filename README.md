@@ -60,7 +60,7 @@ And there we have it! I foresee new features of this app coming soon!
 
 ## Design Pattern
 
-<img src="https://user-images.githubusercontent.com/32172992/159157845-00560787-e434-41f9-a6a0-1db36e8ec923.png" data-canonical-src="https://user-images.githubusercontent.com/32172992/159157845-00560787-e434-41f9-a6a0-1db36e8ec923.png" width="200" height="400" />
+<img src="https://user-images.githubusercontent.com/32172992/159158529-c46b0c43-d702-45fb-ac80-e7b97858097c.png" data-canonical-src="https://user-images.githubusercontent.com/32172992/159158529-c46b0c43-d702-45fb-ac80-e7b97858097c.png" width="200" height="400" />
 
 I did my best at incorporating the MVP architectural pattern. The model contains classes that created the ApolloClient instance and a repository that runs
 the GraphQL queries of the characters. The view folder represents the activity and fragment views. Lastly, we have the presenter that uses the models to
