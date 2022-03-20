@@ -1,4 +1,4 @@
-package com.example.rickandmortyapp.view.state
+package com.example.rickandmortyapp.presenter.state
 
 
 sealed class ViewState<T>(

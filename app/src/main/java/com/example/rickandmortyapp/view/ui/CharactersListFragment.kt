@@ -8,8 +8,8 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import com.example.rickandmortyapp.databinding.FragmentCharactersListBinding
-import com.example.rickandmortyapp.view.adapter.CharacterAdapter
-import com.example.rickandmortyapp.view.state.ViewState
+import com.example.rickandmortyapp.presenter.adapter.CharacterAdapter
+import com.example.rickandmortyapp.presenter.state.ViewState
 import com.example.rickandmortyapp.presenter.CharacterPresenter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi

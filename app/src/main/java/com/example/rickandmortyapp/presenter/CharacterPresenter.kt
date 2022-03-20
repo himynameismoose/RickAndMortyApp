@@ -10,7 +10,7 @@ import com.apollographql.apollo.exception.ApolloException
 import com.example.rickandmortyapp.CharacterQuery
 import com.example.rickandmortyapp.CharactersListQuery
 import com.example.rickandmortyapp.model.repository.CharacterRepository
-import com.example.rickandmortyapp.view.state.ViewState
+import com.example.rickandmortyapp.presenter.state.ViewState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.launch

@@ -1,4 +1,4 @@
-package com.example.rickandmortyapp.model
+package com.example.rickandmortyapp.presenter
 
 import com.example.rickandmortyapp.model.repository.CharacterRepository
 import com.example.rickandmortyapp.model.repository.CharacterRepositoryImpl
