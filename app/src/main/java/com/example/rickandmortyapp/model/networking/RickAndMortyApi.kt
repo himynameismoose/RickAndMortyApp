@@ -1,4 +1,4 @@
-package com.example.rickandmortyapp.networking
+package com.example.rickandmortyapp.model.networking
 
 import android.os.Looper
 import com.apollographql.apollo.ApolloClient

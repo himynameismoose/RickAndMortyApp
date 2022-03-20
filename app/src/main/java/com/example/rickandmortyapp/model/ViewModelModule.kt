@@ -1,7 +1,7 @@
-package com.example.rickandmortyapp.di
+package com.example.rickandmortyapp.model
 
-import com.example.rickandmortyapp.repository.CharacterRepository
-import com.example.rickandmortyapp.repository.CharacterRepositoryImpl
+import com.example.rickandmortyapp.model.repository.CharacterRepository
+import com.example.rickandmortyapp.model.repository.CharacterRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

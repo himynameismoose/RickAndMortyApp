@@ -10,7 +10,7 @@ import androidx.navigation.fragment.findNavController
 import com.example.rickandmortyapp.databinding.FragmentCharactersListBinding
 import com.example.rickandmortyapp.view.adapter.CharacterAdapter
 import com.example.rickandmortyapp.view.state.ViewState
-import com.example.rickandmortyapp.viewmodel.CharacterViewModel
+import com.example.rickandmortyapp.presenter.CharacterPresenter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
@@ -20,7 +20,7 @@ class CharactersListFragment : Fragment() {
 
     private lateinit var binding: FragmentCharactersListBinding
     private val characterAdapter by lazy { CharacterAdapter() }
-    private val viewModel by viewModels<CharacterViewModel>()
+    private val viewModel by viewModels<CharacterPresenter>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

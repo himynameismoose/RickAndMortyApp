@@ -9,7 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import com.example.rickandmortyapp.databinding.FragmentCharacterDetailsBinding
 import com.example.rickandmortyapp.view.state.ViewState
-import com.example.rickandmortyapp.viewmodel.CharacterViewModel
+import com.example.rickandmortyapp.presenter.CharacterPresenter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
@@ -19,7 +19,7 @@ class CharacterDetailsFragment : Fragment() {
     // properties
     private lateinit var binding: FragmentCharacterDetailsBinding
     private val args: CharacterDetailsFragmentArgs by navArgs()
-    private val viewModel by viewModels<CharacterViewModel>()
+    private val viewModel by viewModels<CharacterPresenter>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

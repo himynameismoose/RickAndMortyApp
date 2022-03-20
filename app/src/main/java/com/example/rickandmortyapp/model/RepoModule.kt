@@ -1,6 +1,6 @@
-package com.example.rickandmortyapp.di
+package com.example.rickandmortyapp.model
 
-import com.example.rickandmortyapp.networking.RickAndMortyApi
+import com.example.rickandmortyapp.model.networking.RickAndMortyApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

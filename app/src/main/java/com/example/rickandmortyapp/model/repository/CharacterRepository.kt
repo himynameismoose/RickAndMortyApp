@@ -1,4 +1,4 @@
-package com.example.rickandmortyapp.repository
+package com.example.rickandmortyapp.model.repository
 
 import com.apollographql.apollo.api.Response
 import com.example.rickandmortyapp.CharacterQuery
