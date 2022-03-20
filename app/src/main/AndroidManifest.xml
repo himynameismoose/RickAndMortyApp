@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".view.ui.CharacterListActivity" />
+        <activity android:name=".view.ui.SharedPreferencesActivity"/>
     </application>
 
 </manifest>

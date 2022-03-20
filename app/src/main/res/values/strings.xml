@@ -2,4 +2,14 @@
     <string name="app_name">RickAndMortyApp</string>
     <string name="view_all_characters">View all characters</string>
     <string name="zero_characters_found">Zero characters found</string>
+    <string name="app_title">App_Title</string>
+    <string name="no_character_details_found">No, character details found!</string>
+    <string name="todo">TODO</string>
+    <string name="shared_preferences">shared preferences</string>
+    <string name="user_id">User ID</string>
+    <string name="password">Password</string>
+    <string name="save_user_data">SAVE USER DATA</string>
+    <string name="clear_user_data">CLEAR USER DATA</string>
+    <string name="show">SHOW</string>
+    <string name="show_default">Show Default</string>
 </resources>
